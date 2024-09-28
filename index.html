@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Tôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng đến với trang web của tôi!</h1>
+    <p>Đây là một trang web an toàn với SSL/TLS tự tạo.</p>
+
+    <!-- Form đăng nhập -->
+    <div id="login-form">
+        <h2>Đăng Nhập</h2>
+        <form onsubmit="return login()">
+            <label for="username">Tên đăng nhập:</label><br>
+            <input type="text" id="username" required><br><br>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" required><br><br>
+            <input type="submit" value="Đăng Nhập">
+        </form>
+    </div>
+
+    <script>
+        // Hàm xử lý đăng nhập
+        function login() {
+            // Chỉ cần chuyển hướng tới trang mới
+            window.location.href = "success.html"; // Chuyển đến trang thành công
+            return false; // Ngăn chặn reload trang
+        }
+    </script>
+</body>
+</html>

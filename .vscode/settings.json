@@ -1,0 +1,5 @@
+"liveServer.settings.https": {
+    "enable": true,
+    "cert": "D:/frondend/ssl/dang.com.crt",
+    "key": "D:/frondend/ssl/dang.com.key"
+}
